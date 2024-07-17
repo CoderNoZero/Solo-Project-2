@@ -10,12 +10,15 @@
     <script>
        let x = 100;
        let y = 100;
+       let a = 500
+       let b = 100
        function setup(){
             createCanvas(windowWidth,windowHeight);
         }
         function draw(){
             background("Green");
             square(x,y,50);
+            square(a,b,50)
             if(keyIsPressed === true){
                 print(keyCode);
                 if(keyCode === 87){
@@ -30,6 +33,18 @@
                     x -= 1;
                 }
             }
+                if(keyIsPressed === true){
+                    if(keyCode === UP_ARROW){
+                        b -= 1;
+                    }else if(keyCode === DOWN_ARROW){
+                        b += 1;
+                    }else if(keyCode === RIGHT_ARROW){
+                        a += 1;
+                    }else if(keyCode === LEFT_ARROW){
+                        a -= 1;
+                    }
+                    
+                }
         }
     </script>
 </body>
