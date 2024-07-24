@@ -13,6 +13,7 @@
        let a = 1200;
        let b = 100;
        let c,d
+       let score = 0
        function setup(){
             createCanvas(windowWidth,windowHeight);
             c = random(windowWidth);
@@ -21,12 +22,15 @@
         function draw(){
             let di = dist(x,y,c,d)
             if (di < 100){
-                print("touching");
+                print("touching")
+                score++
             }
+            
             background("Green");
             square(x,y,50);
             square(a,b,50);
             fill("White")
+            text("Score: " + score)
             if(keyIsPressed === true){
                 print(keyCode);
                 if(keyCode === 87){
