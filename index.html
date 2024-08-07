@@ -38,14 +38,12 @@
                 d = random(windowHeight);
             }
             
-            background("Green");
-            fill("White");
-            text("p1Score: " + p1Score,0,30) 
-            fill("Peach");   
+            background("green");
+            fill("white");
+            text("p1Score: " + p1Score,0,30)
+            square(x,y,50); 
+            fill("black");   
             text("p2Score: " + p2Score,0,50)
-            fill("White")
-            square(x,y,50);
-            fill("Peach")
             square(a,b,50);
             if(keyIsPressed === true){
                 print(keyCode);
@@ -73,7 +71,7 @@
                     }
                     
                 }
-                fill("Gold");
+                fill("gold");
                 circle(c,d,50);
                 }
 
