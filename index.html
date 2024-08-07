@@ -21,16 +21,19 @@
             d = random(windowHeight);
         }
         function draw(){
+            text("p1Score: " + p1Score)    
+            text("p2Score: " + p2Score)             
             let di = dist(x,y,c,d)
             if (di < 100){
-                print("touching")
+                print("p1touching")
                 p1Score++
                 c = random(windowWidth);
                 d = random(windowHeight);
-                
-                let dis = dista(a,b,c,d)
-                if (dis < 100){
-                print("touching")
+            }
+
+            let dis = dista(a,b,c,d)
+            if (dis < 100){
+                print("p2touching")
                 p2Score++
                 c = random(windowWidth);
                 d = random(windowHeight);
@@ -40,7 +43,6 @@
             square(x,y,50);
             square(a,b,50);
             fill("White")
-            text("Score: " + score)
             fill("white")
             if(keyIsPressed === true){
                 print(keyCode);
