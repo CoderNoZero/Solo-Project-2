@@ -21,8 +21,8 @@
             d = random(windowHeight);
         }
         function draw(){
-            text("p1Score: " + p1Score)    
-            text("p2Score: " + p2Score)             
+            text("p1Score: " + p1Score,0,0)    
+            text("p2Score: " + p2Score,0,50)             
             let di = dist(x,y,c,d)
             if (di < 100){
                 print("p1touching")
