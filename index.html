@@ -21,9 +21,7 @@
             d = random(windowHeight);
             text("hi",50,50)
         }
-        function draw(){
-            text("p1Score: " + p1Score,0,0)    
-            text("p2Score: " + p2Score,0,50)             
+        function draw(){             
             let di = dist(x,y,c,d)
             if (di < 100){
                 print("p1touching")
@@ -41,6 +39,8 @@
             }
             
             background("Green");
+            text("p1Score: " + p1Score,0,0)    
+            text("p2Score: " + p2Score,0,50)
             square(x,y,50);
             square(a,b,50);
             fill("White")
