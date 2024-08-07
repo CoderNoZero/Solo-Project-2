@@ -39,12 +39,14 @@
             }
             
             background("Green");
-            text("p1Score: " + p1Score,0,30)    
+            fill("White");
+            text("p1Score: " + p1Score,0,30) 
+            fill("Peach");   
             text("p2Score: " + p2Score,0,50)
-            square(x,y,50);
-            square(a,b,50);
             fill("White")
-            fill("white")
+            square(x,y,50);
+            fill("Peach")
+            square(a,b,50);
             if(keyIsPressed === true){
                 print(keyCode);
                 if(keyCode === 87){
@@ -71,8 +73,8 @@
                     }
                     
                 }
-                circle(c,d,50);
                 fill("Gold");
+                circle(c,d,50);
                 }
 
     </script>
