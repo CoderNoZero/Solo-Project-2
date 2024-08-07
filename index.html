@@ -19,11 +19,10 @@
             createCanvas(windowWidth,windowHeight);
             c = random(windowWidth);
             d = random(windowHeight);
-            text("hi",50,50)
         }
         function draw(){             
             let di = dist(x,y,c,d)
-            if (di < 30){
+            if (di < 10){
                 print("p1touching")
                 p1Score++
                 c = random(windowWidth);
@@ -31,7 +30,7 @@
             }
 
             let dis = dist(a,b,c,d)
-            if (dis < 30){
+            if (dis < 10){
                 print("p2touching")
                 p2Score++
                 c = random(windowWidth);
