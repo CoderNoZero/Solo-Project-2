@@ -23,7 +23,7 @@
         }
         function draw(){             
             let di = dist(x,y,c,d)
-            if (di < 100){
+            if (di < 30){
                 print("p1touching")
                 p1Score++
                 c = random(windowWidth);
@@ -31,7 +31,7 @@
             }
 
             let dis = dist(a,b,c,d)
-            if (dis < 100){
+            if (dis < 30){
                 print("p2touching")
                 p2Score++
                 c = random(windowWidth);
