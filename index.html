@@ -49,25 +49,25 @@
                 print(keyCode);
                 if(keyCode === 87){
                     print("up");
-                    y -= 10;
+                    y -= 7;
                 } else if(keyCode === 83){
                     print("down");
-                    y += 10;
+                    y += 7;
                 }else if(keyCode === 68){
-                    x += 10;
+                    x += 7;
                 }else if(keyCode === 65){
-                    x -= 10;
+                    x -= 7;
                 }
             }
                 if(keyIsPressed === true){
                     if(keyCode === UP_ARROW){
-                        b -= 10;
+                        b -= 7;
                     }else if(keyCode === DOWN_ARROW){
-                        b += 10;
+                        b += 7;
                     }else if(keyCode === RIGHT_ARROW){
-                        a += 10;
+                        a += 7;
                     }else if(keyCode === LEFT_ARROW){
-                        a -= 10;
+                        a -= 7;
                     }
                     
                 }
@@ -76,6 +76,10 @@
                 if(p1Score==3){
                     textSize(100)
                     text("Player 1 Wins",windowWidth/2,windowHeight/2)
+                }
+                if(p2Score==3){
+                    textSize(100)
+                    text("Player 2 Wins",windowWidth/2,windowHeight/2)
                 }
                 }
 
